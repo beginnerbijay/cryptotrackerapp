@@ -76,6 +76,12 @@ body{
 .page:hover{
     background-color: #f9fafb;
 }
+.footer{
+    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 ::-webkit-scrollbar{
     width:7px;
 }
@@ -87,4 +93,12 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: rgba(103,103,103,0.5);
     border-radius: 20px;
+}
+@media only screen and (min-width:480px) and (max-width:639px) {
+    .not{
+        visibility: hidden;
+    }
+    .t-style{
+        width: 100vw;
+    }
 }

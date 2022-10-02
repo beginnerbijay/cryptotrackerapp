@@ -31,7 +31,7 @@ function Coin() {
       {datas?(
         <div className='w-full'>
         <Coindata id={id}/>
-        <div className='w-[70vw] mx-auto'>
+        <div className='w-[70vw] mx-auto sml:w-[95vw]'>
       <Line
         data={{
           labels:coin.map((value)=>{
@@ -49,23 +49,30 @@ function Coin() {
                       borderColor: "#6366f1",
                     }
                   ]
+                  
         }}
-      
+        options={{
+                elements: {
+                  point: {
+                    radius: 1,
+                  },
+                },
+              }}
       />
       <div className='main-4'>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
       onClick={()=>setDays(1)}>
             24 Hours
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
       onClick={()=>setDays(30)}>
             30 Days
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
       onClick={()=>setDays(180)}>
             6 Months
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
       onClick={()=>setDays(365)}>
             1 Year
           </button>
