@@ -62,7 +62,7 @@ function Coin() {
             30 Days
           </button>
       <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-      onClick={()=>setDays(182)}>
+      onClick={()=>setDays(180)}>
             6 Months
           </button>
       <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
