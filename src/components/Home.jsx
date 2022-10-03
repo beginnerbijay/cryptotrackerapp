@@ -25,9 +25,10 @@ function Home() {
   return (
     <>
     {load?
-      (<div className='flex mt-12 justify-center'>
+      (<div className='flex justify-center flex-col'>
+      <h1 className='mx-auto my-3 text-2xl font-medium mt-4'>Top Crypto Currency</h1>
       <div className=''>
-      <table className="table-fixed t-style sml:w-[100vw] s:w-[100vw]">
+      <table className="table-fixed t-style sml:w-[100vw] s:w-[100vw] mx-auto">
     <thead className="bg-slate-800 text-white rounded-t-lg">
       <tr className='rounded-t-lg' >
         <th className='py-4 text-start pl-6 rounded-tl-lg'>Coin</th>
@@ -42,7 +43,7 @@ function Home() {
         <tr key={value.id} className=' hover:bg-[#EBEDEF]' onClick={()=>nav(`/coin/${value.id}`)}>
         <td className='flex py-4 pl-4 sml:pl-2 sml:w-[5rem] s:pl-1'>
         <img
-          className="block h-16 w-auto pr-6 sml:h-14 sml:pr-1 s:h-12 s:pr-1"
+          className="block h-16 w-auto pr-6 sml:h-14 sml:pr-1 s:h-12 s:pr-1 sma:h-14 sma:pr-1"
           src={value.image}
           alt="Your Company"
         /><div className='flex flex-col'><p  className='mt-1 text-2xl font-semibold uppercase sml:text-lg s:text-base'>{value.symbol}</p><p>{value.name}</p></div></td>

@@ -9,6 +9,8 @@
 }
 body{
     background-color: #f9fbfd;
+    position: relative;
+    min-height: 800px;
 }
 .main{
     display: flex;
@@ -77,8 +79,8 @@ body{
     background-color: #f9fafb;
 }
 .footer{
-    margin-top: auto;
-    bottom: 0;
+    position: absolute;
+    bottom: -45px;
     left: 0;
     right: 0;
 }

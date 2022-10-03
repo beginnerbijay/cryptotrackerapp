@@ -16,7 +16,7 @@ export default function Example() {
   const [text,setText] = useState('')
   const nav = useNavigate();
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 s:w-[100vw]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -67,7 +67,7 @@ export default function Example() {
               
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 
-              <form className="w-56 space-y-6" onSubmit={(e)=>e.preventDefault()}>
+              <form className="w-56 space-y-6 s:w-36" onSubmit={(e)=>e.preventDefault()}>
             <div className="space-y-px  rounded-md shadow-sm">
               <div>
                 <input
