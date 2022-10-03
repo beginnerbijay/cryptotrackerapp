@@ -27,28 +27,28 @@ function Home() {
     {load?
       (<div className='flex mt-12 justify-center'>
       <div className=''>
-      <table className="table-fixed t-style sml:w-[100vw]">
+      <table className="table-fixed t-style sml:w-[100vw] s:w-[100vw]">
     <thead className="bg-slate-800 text-white rounded-t-lg">
       <tr className='rounded-t-lg' >
         <th className='py-4 text-start pl-6 rounded-tl-lg'>Coin</th>
         <th className='sml:pl-9'>Price</th>
         <th>24h Change</th>
-        <th className='rounded-tr-lg'>Market Cap</th>
+        <th className='rounded-tr-lg s:hidden'>Market Cap</th>
       </tr>
     </thead>
-    <tbody className="divide-y-2 divide-gray">
+    <tbody className="divide-y-2 divide-gray s:divide-y-1">
     {coin.map((value)=>{
       return (
         <tr key={value.id} className=' hover:bg-[#EBEDEF]' onClick={()=>nav(`/coin/${value.id}`)}>
-        <td className='flex py-4 pl-4 sml:pl-2 sml:w-[5rem]'>
+        <td className='flex py-4 pl-4 sml:pl-2 sml:w-[5rem] s:pl-1'>
         <img
-          className="block h-16 w-auto pr-6 sml:h-14 sml:pr-1"
+          className="block h-16 w-auto pr-6 sml:h-14 sml:pr-1 s:h-12 s:pr-1"
           src={value.image}
           alt="Your Company"
-        /><div className='flex flex-col'><p  className='mt-1 text-2xl font-semibold uppercase sml:text-lg'>{value.symbol}</p><p>{value.name}</p></div></td>
+        /><div className='flex flex-col'><p  className='mt-1 text-2xl font-semibold uppercase sml:text-lg s:text-base'>{value.symbol}</p><p>{value.name}</p></div></td>
         <td className='text-center font-semibold sml:text-end'>&#8377; {numberWithCommas(value.current_price)}</td>
         <td className={value.price_change_percentage_24h>0?'text-center text-[#11952e]':'text-center text-[#f00f18]'}>{value.price_change_percentage_24h.toFixed(2)}%</td>
-        <td className='text-center font-semibold'>&#8377; {value.market_cap > 1000000? (numberWithCommas((value.market_cap/1000000).toFixed(0))) + 'M':''}</td>
+        <td className='text-center font-semibold s:hidden'>&#8377; {value.market_cap > 1000000? (numberWithCommas((value.market_cap/1000000).toFixed(0))) + 'M':''}</td>
       </tr>
     )})}
     </tbody>

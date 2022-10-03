@@ -31,7 +31,7 @@ function Coin() {
       {datas?(
         <div className='w-full'>
         <Coindata id={id}/>
-        <div className='w-[70vw] mx-auto sml:w-[95vw]'>
+        <div className='w-[70vw] mx-auto sml:w-[95vw] s:w-[95vw]'>
       <Line
         data={{
           labels:coin.map((value)=>{
@@ -59,22 +59,22 @@ function Coin() {
                 },
               }}
       />
-      <div className='main-4'>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
+      <div className='main-4 s:justify-around'>
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
       onClick={()=>setDays(1)}>
-            24 Hours
+            <span className='s:text-[12px]'>24 Hours</span>
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
       onClick={()=>setDays(30)}>
-            30 Days
+            <span className='s:text-[12px]'>30 Days</span>
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
       onClick={()=>setDays(180)}>
-            6 Months
+            <span className='s:text-[12px]'>6 Months</span>
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
       onClick={()=>setDays(365)}>
-            1 Year
+            <span className='s:text-[12px]'>1 Year</span>
           </button>
           </div>
       </div>

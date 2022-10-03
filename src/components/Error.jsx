@@ -4,7 +4,7 @@ import logo from '../image.jpg'
 function Error() {
   return (
     <div className='main-2 bg-[#ffffff]'>
-        <img src={logo} className='h-96 sml:hidden'/>
+        <img src={logo} className='h-96 sml:hidden s:hidden'/>
         <div className='w-[19rem]'>
           <h1 className='text-5xl text-[#007dfe]'>404</h1>
           <h1 className='text-2xl mt-2'>Oops! Looks like there is<br/> no such <span>Coin.</span></h1>
