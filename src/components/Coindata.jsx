@@ -24,7 +24,7 @@ function Coindata({id}) {
     <div className='flex justify-center my-3'>
     {search().slice('0','1').map((value,index)=>{
       return(
-            <div className='main-3 sml:flex-col s:flex-col' key={index}>
+            <div className='main-3 sml:flex-col s:flex-col sma:flex-col' key={index}>
             <div className='flex flex-col'>
             <img className="h-auto w-12 mx-auto sml:w-28 s:w-24"
                 src={value.image}

@@ -60,19 +60,19 @@ function Coin() {
               }}
       />
       <div className='main-4 s:justify-around'>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1 sma:w-16"
       onClick={()=>setDays(1)}>
             <span className='s:text-[12px]'>24 Hours</span>
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1 sma:w-16"
       onClick={()=>setDays(30)}>
             <span className='s:text-[12px]'>30 Days</span>
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1 sma:w-16"
       onClick={()=>setDays(180)}>
             <span className='s:text-[12px]'>6 Months</span>
           </button>
-      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1"
+      <button className="flex w-56 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sml:w-24 s:w-16 s:px:1 s:py-1 sma:w-16"
       onClick={()=>setDays(365)}>
             <span className='s:text-[12px]'>1 Year</span>
           </button>
